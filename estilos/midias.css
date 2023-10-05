@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 html, body {
     background-color: rgb(102, 25, 173);
     height: 100vh;
@@ -24,6 +31,9 @@ section#login {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
 }
 
 section#login > #foto {
