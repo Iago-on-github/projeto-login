@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+
     <link rel="stylesheet" href="estilos/midias.css">
     <link rel="stylesheet" href="estilos/style-tablet.css">
 </head>
@@ -18,20 +21,23 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="Login.php" method="post">
-                    <div id="email">
-                        <label for="imail">E-mail:</label>
-                        <input type="email" name="mail" id="imail" required minlength="5" maxlength="20" placeholder="  insira seu e-mail" size="30px">
+                    <div class="email">  
+                        <span class="material-symbols-outlined">Person</span>                    
+                        <input type="email" name="mail" id="imail" required minlength="5" maxlength="20" placeholder="  insira seu e-mail" autocomplete="email">
+                        <label for="imail">Login</label>
                     </div>
                     <br>
-                    <div id="senha">
-                        <label for="isenha">Senha:</label>
-                        <input type="password" name="senha" id="isenha" requerid minlength="5" maxlength="20" placeholder="  insira sua senha" size="30px">
+                    <div class="senha">
+                        <span class="material-symbols-outlined">vpn_key</span>                   
+                        <input type="password" name="senha" id="isenha" requerid minlength="5" maxlength="20" placeholder="  insira sua senha" >
+                        <label for="isenha">Senha</label>
                     </div>
                     <br>
-                    <div id="botoes">
-                        <input type="submit" value="Entrar">
-                        <br>
-                        <input type="submit" value="Esqueci minha senha">
+                    <div class="botoes">   
+                        <input type="submit" value="Entrar">               
+                        <a href="#">
+                            Esqueci a senha <span class="material-symbols-outlined">mail</span> 
+                        </a>
                     </div>
                 </form>
             </div>
