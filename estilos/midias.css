@@ -1,83 +1,38 @@
 @charset "UTF-8";
 
-/*Configurações de tela*/
-
-/*Paleta de Cores:
-
-#5F2C82 - #5C3E86 - #56588C - #527293 - #4B969B 
-
-*/
-
-@media screen and (min-width: 768px) {
-    body {
-        background-color: #527293;
-    }
-
-    section#login {
-        width: 600px;
-        height: 350px;
-        background-color: white;      
-        margin: auto;
-        border-radius: 20px;
-    }
-
-    div#foto {
-        width: 600px;
-        display: inline-block;
-        background-color: blueviolet;
-    }
-
-    div#form {
-        padding: 10px;
-    }
-
-    div#form > h1 {
-        padding: 20px;
-        text-align: center;
-        font-size: 2em;
-    }
-
-    div#form > p {
-        margin-bottom: 15px;
-    }
-
-    div#email {
-        display: inline-block;
-        background-color: #5C3E86;
-        padding: 5px;
-        border-radius: 10px;
-        margin-bottom: 5px;
-    }
-
-    div#email > input {
-        background-color: #94CFCD;
-        height: 30px;
-        border-radius: 10px;
-    }
-
-    div#senha {
-        display: inline-block;
-        background-color: #5C3E86;
-        padding: 5px;
-        border-radius: 10px;
-        margin-bottom: 5px;
-    }
-
-    div#senha > input {
-        background-color: #94CFCD;
-        height: 30px;
-        border-radius: 10px;
-    }
-
-    div#botoes > input{
-        background-color: #7fb9b7;
-        height: 30px;
-        width: 308px;
-        border-radius: 10px;
-        margin-bottom: 5px;
-        color: white;
-        
-    }
-
+html, body {
+    background-color: rgb(102, 25, 173);
+    height: 100vh;
+    width: 100vw;
 }
 
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
+}
+
+section#login > #foto {
+    display: block;
+    background: rgb(102, 25, 173) url(../imagens/pexels-dennis-ariel-18149377.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+}
+
+section#login > div#form {
+    padding: 10px;
+}
