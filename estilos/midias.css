@@ -24,7 +24,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 500px;
@@ -34,6 +33,7 @@ section#login {
 
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > #foto {
@@ -64,19 +64,65 @@ form label {
 }
 
 form > div.email {
-    background-color: #878787;
+    background-color: #878787b2;
     height: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.527);
+}
+
+form > div.email > span {
+    color: #181818;
+    width: 40px;
+    font-size: 2em;
+    padding: 5px;
+}
+
+div.email > input {
+    background-color: #878787b2;
+    font-size: 1em;
+    width:calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-14px);
+}
+
+div.email > input:focus-within {
+    background-color: white;
 }
 
 form > div.senha {
-    background-color: #878787;
+    background-color: #878787b2;
     height: 40px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.527);
+}
+
+form > div.senha > span {
+    color: #181818;
+    width: 40px;
+    font-size: 2em;
+    padding: 5px;
+}
+
+div.senha > input {
+    background-color: #878787b2;
+    font-size: 1em;
+    width:calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-14px);
+}
+
+div.senha > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
